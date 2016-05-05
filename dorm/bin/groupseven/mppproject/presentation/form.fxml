@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupseven.mppproject.controller.FormController">
+	<children>
+		<Pane prefHeight="611.0" prefWidth="854.0">
+			<children>
+				<Label layoutX="54.0" layoutY="36.0" prefHeight="38.0" prefWidth="380.0" text="Check In/Check Out Form">
+					<font>
+						<Font name="Bell MT" size="31.0" />
+					</font>
+				</Label>
+				<Separator layoutX="54.0" layoutY="74.0" prefHeight="3.0" prefWidth="355.0" />
+				<Label layoutX="76.0" layoutY="366.0" text="Items:" />
+				<Label layoutX="76.0" layoutY="178.0" text="StudentID:" />
+				<TextField fx:id="studentId" layoutX="187.0" layoutY="173.0" prefHeight="31.0" prefWidth="155.0" />
+				<CheckBox fx:id="bedItem" layoutX="189.0" layoutY="366.0" mnemonicParsing="false" text="Bed" />
+				<CheckBox fx:id="chairItem" layoutX="327.0" layoutY="366.0" mnemonicParsing="false" text="Chair" />
+				<CheckBox fx:id="curtainItem" layoutX="461.0" layoutY="366.0" mnemonicParsing="false" text="Curtain" />
+				<CheckBox fx:id="mirrorItem" layoutX="607.0" layoutY="366.0" mnemonicParsing="false" text="Mirror" />
+				<CheckBox fx:id="bedLinenItem" layoutX="714.0" layoutY="366.0" mnemonicParsing="false" text="Bed Linen" />
+				<Label layoutX="76.0" layoutY="248.0" text="Building No" />
+				<Label layoutX="76.0" layoutY="306.0" text="Room No" />
+				<ComboBox fx:id="buildingNo" layoutX="189.0" layoutY="243.0" onAction="#onBuildingSelected" prefWidth="150.0" />
+				<ComboBox fx:id="roomNo" layoutX="189.0" layoutY="301.0" onAction="#onRoomSelected" prefWidth="150.0" />
+				<Label layoutX="76.0" layoutY="446.0" text="Date" />
+				<DatePicker fx:id="formSubmissionDate" layoutX="187.0" layoutY="441.0" onAction="#onDateSelected" />
+				<Button fx:id="submitButton" layoutX="77.0" layoutY="543.0" mnemonicParsing="false" onAction="#submitButtonClicked" text="Submit" />
+				<Label layoutX="72.0" layoutY="119.0" text="Form Type" />
+				<ComboBox fx:id="formType" layoutX="187.0" layoutY="114.0" onAction="#formTypeSelected" prefWidth="150.0" />
+            <Text fx:id="message" layoutX="172.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="246.6708984375" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

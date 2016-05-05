@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupseven.mppproject.controller.StudentDetailController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="displayStudentDetails" layoutX="107.0" layoutY="114.0" prefHeight="419.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="studentId" prefWidth="123.0" text="Student Id" />
+          <TableColumn fx:id="studentName" prefWidth="263.0" text="Student Name" />
+            <TableColumn fx:id="buildingNo" prefWidth="135.0" text="Building No" />
+            <TableColumn fx:id="roomNo" editable="false" prefWidth="125.0" text="Room No" />
+        </columns>
+      </TableView>
+      <Label layoutX="304.0" layoutY="36.0" text="Details of Student" textFill="#d72323">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

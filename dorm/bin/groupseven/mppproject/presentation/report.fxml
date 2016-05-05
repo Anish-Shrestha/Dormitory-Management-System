@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="637.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupseven.mppproject.controller.ReportController">
+	<children>
+      <Pane layoutX="-124.0" layoutY="-90.0" prefHeight="217.0" prefWidth="526.0">
+         <children>
+            <Label layoutX="180.0" layoutY="152.0" text="Report" textFill="#117012">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="56.0" layoutY="100.0" prefHeight="54.0" prefWidth="693.0" />
+      <TableView fx:id="reportTable" layoutX="59.0" layoutY="158.0" prefHeight="402.0" prefWidth="693.0">
+        <columns>
+          <TableColumn fx:id="buildingNo" prefWidth="220.0" text="Building Number" />
+          <TableColumn fx:id="roomsOccupied" prefWidth="472.0" text="Number of Rooms Occupied" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
